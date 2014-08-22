@@ -90,7 +90,7 @@ After talking to the client you have come up with the following **Entity Relatio
 	* max length 
 	* presence
 * verify `body`
-	* max length
+	* max length < 250 characters (microblog!)
 	* presence 
 
 ##### Tag
