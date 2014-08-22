@@ -30,7 +30,7 @@ This is not a solo project for anyone. However, you should work out beforehand h
 You and some friends have won a freelance contract to build a micro-blogging prototype for a client. The prototype does not need to have *sessions*, but needs to demonstrate most of the relationships that the application will have. 
 
 
-After talking to the client you have come up with the following **ERD**.
+After talking to the client you have come up with the following **Entity Relationship Diagram (ERD)**.
 
 #### ERD
 
@@ -55,16 +55,16 @@ After talking to the client you have come up with the following **ERD**.
 
 *  belongs to a `user` 
 * `has_many :tags` through a `PostTags` model
-* `has_many :comments, as: :commentable` (See [this polymorphic association link](http://guides.rubyonrails.org/association_basics.html#polymorphic-associations).
+* `has_many :comments, as: :commentable` (See [this polymorphic association link](http://guides.rubyonrails.org/association_basics.html#polymorphic-associations).)
 
 ##### Tag
 
 * `has_many` posts through `PostTags`
-* bonus: should have a way of looking up `users` with associated tags
+* BONUS: Implement a way of looking up `users` with associated tags
 
 ##### Comment
 
-* belongs to either a `post` or `comment` see polymorphic associations
+* belongs to either a `post` or `comment` (see polymorphic associations)
 
 ##### Page
 
@@ -122,7 +122,7 @@ After talking to the client you have come up with the following **ERD**.
 
  Should have resources for the following, but is not limited to this. Your group should always map out the `user` flow and `wireframes`.
  
- Think about setting up resources for the following
+ Think about setting up resources for the following:
  
  * users
  * posts nested under users
@@ -134,7 +134,7 @@ After talking to the client you have come up with the following **ERD**.
  
  > Note: you will have also map out how to `comment` on an existing `comment` (Hint: this will require more routes and methods in the comments controller :wink: ... )
  
- Should have the following controllers
+ Should have the following controllers:
  
  * `Site` controller
  	* `home` the root
@@ -174,7 +174,7 @@ Why such meager `TagUsers` and `Comments` controllers?
 * Setup models, associations, validations
 * Test model functionality
 	* validations when creating, updating, finding, et cetera 
-	* test associations in rails console and rspec
+	* test associations in Rails console and RSpec
 * Setup routes, controllers, and views
 * Request specs
 	* check response status
