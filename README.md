@@ -185,3 +185,7 @@ Why such meager `TagUsers` and `Comments` controllers?
 
 * Deploy your application to [Heroku](https://devcenter.heroku.com/articles/getting-started-with-rails4) 
 * Implement responsive design in your application (start thinking how your app would look on different devices) and use this [tutorial](http://www.revillweb.com/tutorials/bootstrap-tutorial/) to help
+
+### MERGE / PULL PRACTICE ###
+Nick's changes
+
