@@ -2,7 +2,8 @@
 
 ### Getting Started
 
-1. Have one team member set up a repository and then have your other team members fork and then clone the repository.
+0. Have one team member set up a repository and then have your other team members fork and then clone the repository.
+1. `git remote add upstream <git_url_of_the_blessed_repository>`
 2. Always run `git pull upstream` or `git fetch upstream` before modifying code on your branch.
 3. Commit frequently to avoid merge conflicts.
 4. If you create your own branch use the following command to create a branch and switch to it right away
