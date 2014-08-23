@@ -1,5 +1,6 @@
 # Micro Blog
 ## A Group Prep
+## Star Wars Group Project 1
 
 
 | Core Goals |
