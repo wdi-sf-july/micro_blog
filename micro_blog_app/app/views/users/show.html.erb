@@ -1,6 +1,8 @@
 <div>
   <%= render partial: "user", locals: {user: @user} %>
+  <% unless @posts.empty? %>
   <%= render partial: "posts/preview", locals: {post: @posts.last, user: @user} %>
+  <% end %>
   <% @pages.each do |page| %>
     <%= render partial: "pages/preview", locals: {page: page, user: @user} %>
   <% end %>
