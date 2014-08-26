@@ -17,3 +17,8 @@
     </div>
   </div>
 </div>
+<% unless flash.keys.empty? %>
+<div class="cust-con">
+  <%= render partial: "layouts/errors", locals: {flash: flash} %>
+</div>
+<% end %>

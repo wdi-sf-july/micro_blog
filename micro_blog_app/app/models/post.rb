@@ -5,8 +5,8 @@ class Post < ActiveRecord::Base
   has_many :comments, :as => :commentable
 
   validates_associated :post_tags
-  validates :body, :length => {:in => 0..250}
-  validate :title, :length => {:in => 0..100}
+  validates :body, :length => {:in => 1..250}
+  validates :title, :length => {:in => 1..100}
 
   def stringify_tags
     self.tags

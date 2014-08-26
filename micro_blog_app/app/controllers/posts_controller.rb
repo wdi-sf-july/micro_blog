@@ -25,6 +25,7 @@ class PostsController < ApplicationController
       @user.posts << post
       redirect_to user_posts_path(@user.id)
     else
+      flash[:error] = post.errors.full_messages.to_sentence
       redirect_to new_user_post_path @user.id
     end
   end
