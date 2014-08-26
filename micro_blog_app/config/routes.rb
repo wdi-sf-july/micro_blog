@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+
+  root to: "site#home"
+  get "/about", to: "site#about", as: "about"
+  get "/contact", to: "site#contact", as: "contact"
   resources :users do 
     resources :posts
     resources :pages

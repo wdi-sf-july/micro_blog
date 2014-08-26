@@ -2,14 +2,16 @@
   <div class="container">
     <div class="navbar-header">
       <div class="navbar-brand">
-        BlogIT
+        <%= link_to "BlogIT", "/" %>
       </div>
     </div>
     <div class="nav navbar-nav navbar-right">
-      <ul class="nav navbar-nav">
+      <ul class="hidden-xs nav navbar-nav">
          <li><%= link_to "New User", new_user_path %> </li>
          <% if user && user.id%>
            <li> <%= link_to "New Post", new_user_post_path(user.id) %></li>
+           <li> <%= link_to "Posts", user_posts_path(user.id) %> </li>
+           <li> <%= link_to "Pages", user_pages_path(user.id) %> </li>
          <% end %>
       </ul>
     </div>
