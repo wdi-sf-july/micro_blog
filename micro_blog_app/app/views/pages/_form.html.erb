@@ -1,0 +1,11 @@
+<%= form_for [user, page] do |f| %>
+  <div>
+    <%= f.text_field :name %>
+  </div> 
+  <div>
+    <%= f.text_area :content %>
+  </div>
+  <div>
+    <%= f.submit %>
+  </div>
+<% end %>

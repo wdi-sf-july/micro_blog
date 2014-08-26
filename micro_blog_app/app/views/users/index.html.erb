@@ -1,0 +1,5 @@
+<div class="row">
+  <% @users.each do |user| %>
+    <%= render partial: 'preview', :locals => {:user => user} %>
+  <% end %>
+</div>

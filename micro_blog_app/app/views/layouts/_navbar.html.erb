@@ -1,0 +1,17 @@
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <div class="navbar-brand">
+        BlogIT
+      </div>
+    </div>
+    <div class="nav navbar-nav navbar-right">
+      <ul class="nav navbar-nav">
+         <li><%= link_to "New User", new_user_path %> </li>
+         <% if user && user.id%>
+           <li> <%= link_to "New Post", new_user_post_path(user.id) %></li>
+         <% end %>
+      </ul>
+    </div>
+  </div>
+</div>

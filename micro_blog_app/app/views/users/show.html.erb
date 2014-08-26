@@ -1,0 +1,8 @@
+<div>
+  <%= render partial: "user", locals: {user: @user} %>
+  <%= render partial: "posts/preview", locals: {post: @posts.last, user: @user} %>
+  <% @pages.each do |page| %>
+    <%= render partial: "pages/preview", locals: {page: page, user: @user} %>
+  <% end %>
+  <%= render partial: "tags/tags", locals: {tags: @tags, user: @user} %>
+</div>
